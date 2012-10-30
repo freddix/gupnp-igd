@@ -1,0 +1,12 @@
+diff -aurN gupnp-igd-0.2.0.orig/configure.ac gupnp-igd-0.2.0/configure.ac
+--- gupnp-igd-0.2.0.orig/configure.ac	2012-10-30 20:50:14.197313346 +0100
++++ gupnp-igd-0.2.0/configure.ac	2012-10-30 20:54:22.025256135 +0100
+@@ -10,7 +10,7 @@
+ AC_PROG_LIBTOOL
+ AC_FUNC_MMAP
+ 
+-PKG_CHECK_MODULES(LIBGUPNP, glib-2.0 >= 2.14 gupnp-1.0 >= 0.18 gthread-2.0)
++PKG_CHECK_MODULES(LIBGUPNP, glib-2.0 >= 2.14 gupnp-1.0 >= 0.18 gthread-2.0 gobject-2.0)
+ 
+ # glib-genmarshal
+ GLIB_GENMARSHAL=`pkg-config --variable=glib_genmarshal glib-2.0`
